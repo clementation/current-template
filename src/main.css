@@ -1,0 +1,83 @@
+  @import url("https://use.typekit.net/xhb0drn.css");
+
+*{
+  box-sizing: border-box;
+}
+
+/* what is this? */
+:root {
+  /* TO DO */
+  /* optionally look up color scheems later */
+
+  font-family: sofia-pro-variable, sans-serif;
+
+  margin: 0;
+
+  /* Color scheme */
+  --color-background: #f0f0f0;
+  --color-text: #333333;
+  --color-primary: #2fcbd6;
+  --color-secondary: #d8c883;
+
+  /* page formatting */
+  --max-width: 1440px;
+  --navbar-height: 5rem;
+
+  /* Spacing */
+  --padding: 1rem;
+
+  /* Look up what these do */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.outlet-container {
+  margin-top: var(--navbar-height); /* Adjust based on the height of your navbar */
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--padding);
+}
+
+.auto-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auto-layout {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+  align-items: center;
+  justify-content: center;
+}
+
+.lorm-block {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+  max-width: 30rem; /* Adjust as needed */
+}
