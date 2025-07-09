@@ -58,6 +58,12 @@ img {
   padding: var(--padding);
 }
 
+.outlet {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
 .auto-wrapper {
   display: flex;
   flex-direction: column;

@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useMediaQuery } from 'react-responsive';
 
+import NavTabs from './NavTabs';
+
 import '../styles/navbar.css';
 
 //Navbar behavior:
@@ -20,21 +22,10 @@ type navState = "default" | "small" | "expanded";
 interface StateProps {
     navState: navState;
     setNavState: React.Dispatch<React.SetStateAction<navState>>;
-    handleScroll: () => void;
+    handleEscape: () => void;
 }
 
-// Website pages
-function NavLinks({ navState, setNavState, handleScroll }:StateProps) {
-    return (
-        <>
-            <a href="/about">About</a>
-            <a href="/work">Work</a>
-            <a href="/contact">Contact</a>
-        </>
-    )
-}
-
-export default function Navbar() {
+export default function Navbar({}) {
 
     //Scroll threshold to trigger navbar size change
     const scrollThreshold: number = 70;
@@ -44,7 +35,7 @@ export default function Navbar() {
 
     // Handle scroll event to toggle navbar size
     // Also checks threshold when closing expanded navbar in mobile view
-    function handleScroll () {
+    function handleEscape () {
 
         if (window.scrollY > scrollThreshold) { // User has scrolled down
             setNavState("small");
@@ -58,8 +49,8 @@ export default function Navbar() {
 
         if (navState === "expanded") return; // Skip if navbar is manually expanded
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleEscape);
+        return () => window.removeEventListener('scroll', handleEscape);
     }, []);
 
     // Key styles for chaning height of navbar when scrolling down
@@ -76,6 +67,7 @@ export default function Navbar() {
         }
     }
 
+    // Use media query to determine if the device is mobile
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
     return (
@@ -92,24 +84,24 @@ export default function Navbar() {
                     </a>
                 </div>
                 <div className='navbar-right'>
-                    {isMobile ? <Burger navState={navState} setNavState={setNavState} handleScroll={handleScroll} /> : <NavLinks />}
+                    {isMobile ? <Burger navState={navState} setNavState={setNavState} handleEscape={handleEscape} /> : <NavTabs /> }
                 </div>
             </motion.div>
             <AnimatePresence>
-                {navState === "expanded" && <NavDropdown />}
+                {navState === "expanded" && <NavDropdown handleEscape={handleEscape} />}
             </AnimatePresence>
         </nav>
     )
 }
 
-function Burger({ navState, setNavState, handleScroll }:StateProps) {
+function Burger({ navState, setNavState, handleEscape }:StateProps) {
 
     function handleClick(){
         if(navState != "expanded"){
             setNavState("expanded");
         }else{
             // If user has scrolled down, set to small, else set to default
-            handleScroll();
+            handleEscape();
         }
     }
 
@@ -162,7 +154,7 @@ function Burger({ navState, setNavState, handleScroll }:StateProps) {
     )
 }
 
-function NavDropdown() {
+function NavDropdown({handleEscape}: { handleEscape?: () => void }) {
 
     return (
         <motion.div 
@@ -176,7 +168,7 @@ function NavDropdown() {
             }}
         >
             <div className='dropdown-links'>
-                <NavLinks />
+                <NavTabs handleEscape={handleEscape} />
             </div>
         </motion.div>
     )

@@ -1,0 +1,42 @@
+.nav-tabs{
+    isolation: isolate;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 0.5rem;
+}
+
+.nav-tab {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    padding: 0.3rem 1rem 0.4rem 1rem;
+    color: white;
+}
+
+.tab-label {
+    position: relative;
+    z-index: 10;
+    mix-blend-mode: exclusion;
+}
+
+.nav-tab:hover {
+    color: rgb(228, 228, 228);
+    transition: ease-in-out 0.1s;
+}
+
+.active-nav-tab {
+    /* color: var(--color-background); */
+    /* font-weight: bold; */
+}
+
+.navigator {
+    position: absolute;
+    inset: 0;
+    /* inset: 95% 0 0 0; */
+    /* border radius needs to be changed in NavTabs.tsx */
+    background-color: white;
+}
