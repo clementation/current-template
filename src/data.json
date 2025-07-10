@@ -1,0 +1,143 @@
+[
+    {
+        "title": "Subject Title",
+        "description": "A brief description of the subject of the project overall.",
+        "images": [
+            {
+                "src": "/image-data/Subject.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            },
+            {
+                "src": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHgzOHBodnZnd2J2NHEwMXVybTd6d2xyejRjMWptYTB2cXphamVieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YaEio7y7Q7qa7iiTRM/giphy.gif",
+                "alt": "Dancing Rat",
+                "description": "Get Ratted"
+            }
+        ]
+    },
+    {
+        "title": "Bulbasaur",
+        "description": "Bright like a lightbulb, this is a Bulbasaur.",
+        "images": [
+            {
+                "src": "/image-data/Bulbasaur.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Bumbeling",
+        "description": "A flower, a splash of color, and a little bee.",
+        "images": [
+            {
+                "src": "/image-data/Bumbeling.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Converse",
+        "description": "Pondering the converse",
+        "images": [
+            {
+                "src": "/image-data/Converse.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Dragging",
+        "description": "Moving forward is hard sometimes.",
+        "images": [
+            {
+                "src": "/image-data/Dragging.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Fish",
+        "description": "The trippiest fish you're likely to encounter.",
+        "images": [
+            {
+                "src": "/image-data/Fish.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Frox",
+        "description": "The mother of your chika tech.",
+        "images": [
+            {
+                "src": "/image-data/Frox.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "FUCKING HELP ME",
+        "description": "Sometimes getting it out is the only way ro find a little peace.",
+        "images": [
+            {
+                "src": "/image-data/FUCKING-HELP-ME.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Goose-Running",
+        "description": "Hes a runner hes a track star!",
+        "images": [
+            {
+                "src": "/image-data/Goose-Running.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Gull",
+        "description": "The absolute unit.",
+        "images": [
+            {
+                "src": "/image-data/Gull.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Self-Consumed",
+        "description": "Sometimes it hard to see past yourself.",
+        "images": [
+            {
+                "src": "/image-data/Self-Consumed.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    },
+    {
+        "title": "Succulent",
+        "description": "Sorry I'm late. Damn I miss this shit.",
+        "images": [
+            {
+                "src": "/image-data/Succulent.png",
+                "alt": "Alt text for accessibility",
+                "description": "Image 1 description"
+            }
+        ]
+    }
+]
+
+
+
+

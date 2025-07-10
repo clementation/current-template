@@ -1,0 +1,26 @@
+.card{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.card img {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    background-color: white;
+    overflow: hidden;
+}

@@ -33,8 +33,12 @@ export const Route = createRootRoute({
 
 
 // This component allows animation between pages when switching routes
-// The work around that enabled this was provided by Fauxparse. Link below:
+// The work around that enabled this was provided by Fauxparse.
+// Link below:
 // https://github.com/TanStack/router/discussions/823
+
+// It creates a clone of the router context to prevent the
+// animation from breaking when switching routes.
 
 const AnimatedOutlet = forwardRef<HTMLDivElement>((_, ref) => {
     
@@ -48,12 +52,12 @@ const AnimatedOutlet = forwardRef<HTMLDivElement>((_, ref) => {
     }
 
     return (
-        <motion.div 
+        <motion.div className='outlet'
             ref={ref}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
         <RouterContext.Provider value={renderedContext.current}>
             <Outlet />

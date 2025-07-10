@@ -25,12 +25,21 @@
 
   /* Spacing */
   --padding: 1rem;
+  --gap: 0.5rem;
+  --border-radius: 0.5rem;
 
   /* Look up what these do */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --max-width: 100%;
+    --padding: 0.5rem;
+  }
 }
 
 body {
@@ -59,8 +68,6 @@ img {
 }
 
 .outlet {
-  position: relative;
-  z-index: 0;
   width: 100%;
 }
 

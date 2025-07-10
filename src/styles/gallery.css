@@ -1,0 +1,18 @@
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

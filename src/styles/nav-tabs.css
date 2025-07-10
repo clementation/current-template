@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    gap: 0.5rem;
+    gap: calc(var(--gap) / 2);
 }
 
 .nav-tab {
@@ -28,10 +28,10 @@
     transition: ease-in-out 0.1s;
 }
 
-.active-nav-tab {
-    /* color: var(--color-background); */
-    /* font-weight: bold; */
-}
+/* .active-nav-tab {
+    color: var(--color-background);
+    font-weight: bold;
+} */
 
 .navigator {
     position: absolute;

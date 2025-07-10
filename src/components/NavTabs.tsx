@@ -14,14 +14,15 @@ import '../styles/nav-tabs.css'
 let tabs = [
     { name: "Home", location: "/" },
     { name: "About", location: "/about" },
+    { name: "Gallery", location: "/gallery" },
     { name: "Contact", location: "/contact" }
 ]
 
-export default function NavTabs({handleEscape}: { handleEscape?: () => void }) {
-    
+export default function NavTabs({ handleEscape }: { handleEscape?: () => void }) {
+
     // Use media query to determine if the device is mobile
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-    
+
     // Get the current router state to determine the active tab
     const routerState = useRouterState()
 
@@ -35,23 +36,23 @@ export default function NavTabs({handleEscape}: { handleEscape?: () => void }) {
 
     return (
         <div className='nav-tabs'
-            style={{ flexDirection: isMobile? 'column' : 'row' }}
+            style={{ flexDirection: isMobile ? 'column' : 'row' }}
         >
             {tabs.map((tab) => (
                 <Link
-                    key={tab.location} 
+                    key={tab.location}
                     onClick={() => {
                         setActiveTab(tab.location)
                         handleEscape?.() // Call handleEscape if provided
                     }}
                     to={tab.location}
-                    className={`nav-tab ${activeTab === tab.location ? 'active-nav-tab' : ''}`} 
+                    className={`nav-tab ${activeTab === tab.location ? 'active-nav-tab' : ''}`}
                 >
                     {activeTab === tab.location && (
-                        <motion.div 
-                        className='navigator' 
-                        layoutId="navigator" 
-                        style={{ borderRadius: 999999 }}
+                        <motion.div
+                            className='navigator'
+                            layoutId="navigator"
+                            style={{ borderRadius: 999999 }}
                         />
                     )}
                     <span className='tab-label'>{tab.name}</span>
