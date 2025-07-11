@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Link } from '@tanstack/react-router'; // Adjust import based on your routing library
 import { useMediaQuery } from 'react-responsive';
 
+import LazyImage from './LazyImage';
+
 import '../styles/card.css';
 
 // Card Behavior:
@@ -26,7 +28,8 @@ export default function Card({ item }: { item: any }) {
                 onMouseEnter={ !isMobile ? () => setHovered(true) : undefined } 
                 onMouseLeave={ !isMobile ? () => setHovered(false) : undefined }
             >
-                <img src={item.images[0].src} alt={item.images[0].alt}/>
+                {/* <img src={item.images[0].src} alt={item.images[0].alt} loading='lazy'/> */}
+                <LazyImage src={item.images[0].src} alt={item.images[0].src} />
                 <AnimatePresence>
                     { hovered && <CardTitle title={item.title} /> }
                 </AnimatePresence>

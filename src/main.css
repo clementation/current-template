@@ -14,8 +14,9 @@
   margin: 0;
 
   /* Color scheme */
-  --color-background: #f0f0f0;
-  --color-text: #333333;
+  --color-light: #f0f0f0;
+  --color-dark: #333333;
+  --color-text: var(--color-dark);
   --color-primary: #2fcbd6;
   --color-secondary: #d8c883;
 
@@ -35,6 +36,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Mobile Formatting */
 @media screen and (max-width: 768px) {
   :root {
     --max-width: 100%;
@@ -56,7 +58,7 @@ img {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--color-background);
+  background-color: var(--color-light);
   color: var(--color-text);
 }
 
@@ -93,4 +95,18 @@ img {
   /* justify-content: center; */
   width: 100%;
   max-width: 30rem; /* Adjust as needed */
+}
+
+
+@keyframes color-pulse {
+  0%   { background-color: #e5e7eb; } /* light gray  */
+  50%  { background-color: #dee1e6; } /* mid gray    */
+  100% { background-color: #e5e7eb; } /* back again  */
+}
+
+.image-skeleton{
+  position: absolute;
+  inset: 0;
+  /* background-color: lightgray; */
+  animation: color-pulse 2s ease-in-out infinite;
 }

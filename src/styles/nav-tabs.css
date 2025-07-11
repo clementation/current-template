@@ -14,7 +14,7 @@
     position: relative;
     text-decoration: none;
     padding: 0.3rem 1rem 0.4rem 1rem;
-    color: white;
+    color: var(--color-light);
 }
 
 .tab-label {
@@ -24,19 +24,34 @@
 }
 
 .nav-tab:hover {
-    color: rgb(228, 228, 228);
     transition: ease-in-out 0.1s;
+    color: color-mix(in srgb, var(--color-light) 70%, transparent);
 }
 
-/* .active-nav-tab {
-    color: var(--color-background);
-    font-weight: bold;
-} */
+.active-nav-tab {
+    /* font-weight: bold; */
+    /* color: var(--color-dark); */
+}
+
+/* Prevents hover from changing text color of active tab */
+.active-nav-tab:hover {
+    color: var(--color-light);
+}
 
 .navigator {
     position: absolute;
     inset: 0;
-    /* inset: 95% 0 0 0; */
     /* border radius needs to be changed in NavTabs.tsx */
-    background-color: white;
+
+    /* Solid */
+    background-color: var(--color-light);
+
+    /* Other Options */
+
+    /* Outline */
+    /* border: solid 2px var(--color-light); */
+
+    /* Underline */
+    /* margin: 0 1rem 0 1rem;
+    border-bottom: solid 2px var(--color-light); */
 }

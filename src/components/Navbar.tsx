@@ -161,7 +161,7 @@ function NavDropdown({handleEscape}: { handleEscape?: () => void }) {
             className='nav-dropdown'
             initial={{height: 0}}
             animate={{height: "auto"}}
-            exit={{height: 0}}
+            exit={{height: 0, transition: { delay: 0.4, ease: "easeInOut", duration: 0.3 }}} // <-- add delay here
             transition={{
                 ease: "easeInOut",
                 duration: 0.3

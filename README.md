@@ -16,8 +16,7 @@ Here is his [website](https://connorkealey.design)
 
 # To Do
 1. Anotate code untill this point
-2. Create json based content rendering system
-3. Dynamic routes
-4. Add a dely before the mobile dropdown closes
+2. Add a dely before the mobile dropdown closes
+3. There's gitter when navigating to the gallery page, adding loading skeletons might help
 
 

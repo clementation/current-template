@@ -3,6 +3,7 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: var(--border-radius);
+    aspect-ratio: 1 / 1; 
 }
 
 .card img {
@@ -17,10 +18,14 @@
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: end;
     align-items: center;
     padding-left: var(--padding);
     padding-right: var(--padding);
-    background-color: white;
     overflow: hidden;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.card-title h3 {
+    margin-block: 0.75rem;
 }
