@@ -26,7 +26,7 @@
 
   /* Spacing */
   --padding: 1rem;
-  --gap: 0.5rem;
+  --gap: 1rem;
   --border-radius: 0.5rem;
 
   /* Look up what these do */
@@ -36,11 +36,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Mobile Formatting */
+/* Mobile root Formatting */
 @media screen and (max-width: 768px) {
   :root {
     --max-width: 100%;
     --padding: 0.5rem;
+    --gap: 0.5rem;
   }
 }
 
@@ -73,21 +74,46 @@ img {
   width: 100%;
 }
 
+/* Auto Wrapper */
 .auto-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.auto-layout {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   padding: var(--padding);
+  gap: calc(var(--gap) * 2);
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
+@media screen and (max-width: 768px) {
+  .auto-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Text Article */
+.text-wrapper {
+  width: 100%;
+}
+
+.text-wrapper p {
+  max-width: 30rem;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+/* Utility Classes */
+@media screen and (max-width: 768px) {
+  .reverse-on-mobile{
+    flex-direction: column-reverse;
+  }
+}
+
+
+/* Dev Utilities */
 .lorm-block {
   display: flex;
   flex-direction: column;
@@ -95,18 +121,4 @@ img {
   /* justify-content: center; */
   width: 100%;
   max-width: 30rem; /* Adjust as needed */
-}
-
-
-@keyframes color-pulse {
-  0%   { background-color: #e5e7eb; } /* light gray  */
-  50%  { background-color: #dee1e6; } /* mid gray    */
-  100% { background-color: #e5e7eb; } /* back again  */
-}
-
-.image-skeleton{
-  position: absolute;
-  inset: 0;
-  /* background-color: lightgray; */
-  animation: color-pulse 2s ease-in-out infinite;
 }

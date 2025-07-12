@@ -12,13 +12,22 @@ function GalleryItem() {
 	const item = useLoaderData({ from: '/gallery/$itemId' })
     if (!item) return <div>Item not found</div>
 	return (
-		<>
-			<h1>{item.title}</h1>
-			<p>{item.description}</p>
-			{item.images.map((image, index) => (
-				<LazyImage key={index} src={image.src} alt={image.alt} />
-			))}
-		</>
+		<div className="auto-wrapper reverse-on-mobile">
+			<div className="text-wrapper">
+				<h1>{item.title}</h1>
+				<p>{item.description}</p>
+			</div>
+			<div className="image-wrapper">
+				<LazyImage src={item.images[0].src} alt={item.images[0].alt} />
+			</div>
+		</div>
+		// <>
+		// 	<h1>{item.title}</h1>
+		// 	<p>{item.description}</p>
+		// 	{item.images.map((image, index) => (
+		// 		<LazyImage key={index} src={image.src} alt={image.alt} />
+		// 	))}
+		// </>
 	)
 }
 
@@ -26,6 +35,7 @@ interface GalleryImage {
 	src: string;
 	alt: string;
 }
+
 
 interface GalleryItemData {
 	title: string;

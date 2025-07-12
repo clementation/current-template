@@ -17,7 +17,7 @@
     },
     {
         "title": "Bulbasaur",
-        "description": "Bright like a lightbulb, this is a Bulbasaur.",
+        "description": "Bright like a lightbulb, this is a Bulbasaur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam saepe quos aliquid nisi iure ad vitae similique repellendus minima? Distinctio sapiente placeat fugit itaque earum tempora saepe qui labore obcaecati.",
         "images": [
             {
                 "src": "/image-data/Bulbasaur.png",

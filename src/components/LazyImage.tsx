@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 
-
+import '../styles/lazy-image.css'
 
 // Make sure this component's parrent has relative positioning
 

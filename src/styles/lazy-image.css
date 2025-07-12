@@ -1,0 +1,12 @@
+@keyframes color-pulse {
+  0%   { background-color: #e5e7eb; } /* light gray  */
+  50%  { background-color: #dee1e6; } /* mid gray    */
+  100% { background-color: #e5e7eb; } /* back again  */
+}
+
+.image-skeleton{
+  position: absolute;
+  inset: 0;
+  /* background-color: lightgray; */
+  animation: color-pulse 2s ease-in-out infinite;
+}
