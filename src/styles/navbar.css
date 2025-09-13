@@ -5,7 +5,8 @@ nav{
     flex-direction: column;
     width: 100%;
     /* max-width: var(--max-width); */
-    background-color: var(--color-primary);
+    background-color: var(--color-dark);
+    border-bottom: solid var(--stroke-weight) var(--color-dark);
 }
 
 .navbar-content {
@@ -24,7 +25,7 @@ nav{
     flex: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     height: 100%;
 }
 
@@ -36,13 +37,14 @@ nav{
     height: 100%;
 }
 
-.navbar-left {
+/* uncomment if you plan to center a logo in the navbar */
+/* .navbar-left {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
-}
+} */
 
 .burger {
     display: flex;

@@ -1,21 +1,5 @@
 [
     {
-        "title": "Subject Title",
-        "description": "A brief description of the subject of the project overall.",
-        "images": [
-            {
-                "src": "/image-data/Subject.png",
-                "alt": "Alt text for accessibility",
-                "description": "Image 1 description"
-            },
-            {
-                "src": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHgzOHBodnZnd2J2NHEwMXVybTd6d2xyejRjMWptYTB2cXphamVieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YaEio7y7Q7qa7iiTRM/giphy.gif",
-                "alt": "Dancing Rat",
-                "description": "Get Ratted"
-            }
-        ]
-    },
-    {
         "title": "Bulbasaur",
         "description": "Bright like a lightbulb, this is a Bulbasaur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam saepe quos aliquid nisi iure ad vitae similique repellendus minima? Distinctio sapiente placeat fugit itaque earum tempora saepe qui labore obcaecati.",
         "images": [
@@ -23,6 +7,11 @@
                 "src": "/image-data/Bulbasaur.png",
                 "alt": "Alt text for accessibility",
                 "description": "Image 1 description"
+            },
+            {
+                "src": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHgzOHBodnZnd2J2NHEwMXVybTd6d2xyejRjMWptYTB2cXphamVieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YaEio7y7Q7qa7iiTRM/giphy.gif",
+                "alt": "Dancing Rat",
+                "description": "Get Ratted"
             }
         ]
     },

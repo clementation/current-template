@@ -2,13 +2,31 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    border-radius: var(--border-radius);
-    aspect-ratio: 1 / 1; 
+    box-sizing: border-box;
+    /* border-radius: var(--border-radius); */
+    aspect-ratio: 16/9; 
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: solid var(--stroke-weight) var(--color-dark);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: inherit; /* if you use border-radius on .card */
+  box-sizing: border-box; /* Ensures the pseudo-element's border sits on the edge */
+  z-index: 2; /* Make sure it's above the image but below overlays/text if needed */
+}
+
+.card.show-border::before {
+  opacity: 1;
 }
 
 .card img {
     max-width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16/9;
     object-fit: cover;
     display: block;
 }
@@ -22,10 +40,13 @@
     padding-left: var(--padding);
     padding-right: var(--padding);
     overflow: hidden;
-    background-color: var(--color-primary);
-    color: var(--color-light);
+    backdrop-filter: blur(8px);
+    /* background-color: var(--color-light); */
+    border-top: solid var(--stroke-weight) var(--color-dark);
 }
 
 .card-title h3 {
+    color: var(--color-light);
     margin-block: 0.75rem;
+    mix-blend-mode: screen;
 }

@@ -23,17 +23,17 @@ export default function Card({ item }: { item: any }) {
     return (
 
         <Link to={itemPath} >
-            <div 
-                className="card" 
+            <motion.div 
+                className={`card${hovered ? " show-border" : ""}`}
                 onMouseEnter={ !isMobile ? () => setHovered(true) : undefined } 
                 onMouseLeave={ !isMobile ? () => setHovered(false) : undefined }
             >
                 {/* <img src={item.images[0].src} alt={item.images[0].alt} loading='lazy'/> */}
-                <LazyImage src={item.images[0].src} alt={item.images[0].src} />
+                <LazyImage src={item.heroImage.src} alt={item.heroImage.src} />
                 <AnimatePresence>
                     { hovered && <CardTitle title={item.title} /> }
                 </AnimatePresence>
-            </div>
+            </motion.div>
         </Link>
 
     )
@@ -45,23 +45,24 @@ function CardTitle({ title }: { title: string }) {
     return (
         <motion.div 
                 className='card-title'
-                initial={{height: 0}}
-                animate={{height: "auto"}}
-                exit={{height: 0}}
+                initial={{
+                    height: 0,
+                    opacity: 0
+                }}
+                animate={{
+                    height: "auto",
+                    opacity: 1
+                }}
+                exit={{
+                    height: 0,
+                    opacity: 0
+                }}
                 transition={{
                     ease: "easeInOut",
                     duration: 0.3
                 }}
             >
-                <motion.h3
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    exit={{opacity: 0}}
-                    transition={{
-                        ease: "easeInOut",
-                        duration: 0.3
-                    }}
-                >
+                <motion.h3>
                     {title}
                 </motion.h3>
         </motion.div>

@@ -9,6 +9,7 @@
 }
 
 .nav-tab {
+    font-weight: 500;
     display: flex;
     align-items: center;
     position: relative;
@@ -20,6 +21,7 @@
 .tab-label {
     position: relative;
     z-index: 10;
+    /* include this blend mode if the navbar has a light background color */
     mix-blend-mode: exclusion;
 }
 
@@ -34,8 +36,9 @@
 }
 
 /* Prevents hover from changing text color of active tab */
+/* make sure it's the same as the nav tab color */
 .active-nav-tab:hover {
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 
 .navigator {
@@ -53,5 +56,5 @@
 
     /* Underline */
     /* margin: 0 1rem 0 1rem;
-    border-bottom: solid 2px var(--color-light); */
+    border-bottom: solid 2px var(--color-dark); */
 }

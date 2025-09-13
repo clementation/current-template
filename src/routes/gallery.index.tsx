@@ -4,7 +4,7 @@ import '../styles/gallery.css'
 
 import Card from '../components/Card'
 
-import data from '../data.json'
+import data from '../new-data.json'
 
 export const Route = createFileRoute('/gallery/')({
 	component: Gallery,

@@ -15,19 +15,21 @@
 
   /* Color scheme */
   --color-light: #f0f0f0;
+  /* --color-light: white; */
   --color-dark: #333333;
   --color-text: var(--color-dark);
-  --color-primary: #2fcbd6;
+  --color-primary: #5dc8dc;
   --color-secondary: #d8c883;
 
   /* page formatting */
   --max-width: 1440px;
-  --navbar-height: 5rem;
+  --navbar-height: 6rem;
 
   /* Spacing */
   --padding: 1rem;
   --gap: 1rem;
   --border-radius: 0.5rem;
+  --stroke-weight: 2px;
 
   /* Look up what these do */
   font-synthesis: none;
@@ -79,9 +81,38 @@ img {
   display: flex;
   width: 100%;
   padding: var(--padding);
-  gap: calc(var(--gap) * 2);
   align-items: center;
   /* justify-content: center; */
+}
+
+.half-gap {
+  gap: calc(var(--gap) / 2);
+}
+
+.gap {
+  gap: var(--gap);
+}
+
+.double-gap {
+  gap: calc(var(--gap) * 2);
+}
+
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+  gap: 0rem
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.double-basis {
+  flex-basis: 2;
 }
 
 @media screen and (max-width: 768px) {

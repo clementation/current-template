@@ -4,7 +4,42 @@
     margin-top: auto;
     /* max-width: var(--max-width); */
     width: 100%;
+    background-color: var(--color-dark);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
     height: 5rem;
-    padding: var(--padding);
-    background-color: var(--color-secondary);
+    max-width: var(--max-width);
+    width: 100%;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    gap: var(--gap);
+    color: var(--color-light);
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.footer-logo{
+    height: 2rem;
+    width: auto;
+}
+
+.footer-logo img {
+    height: 100%;
+    width: auto;
 }

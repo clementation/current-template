@@ -52,7 +52,7 @@ export default function NavTabs({ handleEscape }: { handleEscape?: () => void })
                         <motion.div
                             className='navigator'
                             layoutId="navigator"
-                            style={{ borderRadius: 999999 }}
+                            style={{ borderRadius: 999 }}
                         />
                     )}
                     <span className='tab-label'>{tab.name}</span>

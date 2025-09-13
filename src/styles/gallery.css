@@ -1,13 +1,13 @@
 .gallery{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--gap);
 }
 
 @media screen and (max-width: 768px) {
     .gallery {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -15,4 +15,18 @@
     .gallery {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* Styles for item sections */
+
+.section-gallery {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: var(--gap);
+}
+
+.gallery-section-image {
+   flex: 1 0 calc(25%);
 }

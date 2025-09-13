@@ -19,15 +19,15 @@ export const Route = createRootRoute({
         return (
             <>
                 <Navbar />
-                    <div className='outlet-container' >
-                        <AnimatePresence mode="wait">
-                            <AnimatedOutlet key={nextMatch.id} />
-                        </AnimatePresence>
-                    </div>
+                <div className='outlet-container' >
+                    <AnimatePresence mode="wait">
+                        <AnimatedOutlet key={nextMatch.id} />
+                    </AnimatePresence>
+                </div>
                 <Footer />
                 <TanStackRouterDevtools />
             </>
-        )   
+        )
     },
 })
 
@@ -41,7 +41,7 @@ export const Route = createRootRoute({
 // animation from breaking when switching routes.
 
 const AnimatedOutlet = forwardRef<HTMLDivElement>((_, ref) => {
-    
+
     const RouterContext = getRouterContext();
     const routerContext = useContext(RouterContext);
     const renderedContext = useRef(routerContext);
@@ -59,9 +59,9 @@ const AnimatedOutlet = forwardRef<HTMLDivElement>((_, ref) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
-        <RouterContext.Provider value={renderedContext.current}>
-            <Outlet />
-        </RouterContext.Provider>
+            <RouterContext.Provider value={renderedContext.current}>
+                <Outlet />
+            </RouterContext.Provider>
         </motion.div>
     );
 });

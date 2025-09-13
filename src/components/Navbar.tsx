@@ -77,19 +77,26 @@ export default function Navbar({}) {
                 initial={navState === "default" || navState === "expanded" ? "large" : "small"}
                 animate={navState === "default" || navState === "expanded" ? "large" : "small"}  
             >
+
+                {/* uncomment if you plan to center a logo in the navbar */}
                 <div className='navbar-left'></div>
+
                 <div className="navbar-logo">
                     <a href="/">
                         <img src={navState === "default" || navState === "expanded" ? "/logo.svg" : "/logo-small.svg"} alt="Logo" />
                     </a>
                 </div>
+
                 <div className='navbar-right'>
                     {isMobile ? <Burger navState={navState} setNavState={setNavState} handleEscape={handleEscape} /> : <NavTabs /> }
                 </div>
+
             </motion.div>
+
             <AnimatePresence>
                 {navState === "expanded" && <NavDropdown handleEscape={handleEscape} />}
             </AnimatePresence>
+            
         </nav>
     )
 }
