@@ -5,7 +5,7 @@ nav{
     flex-direction: column;
     width: 100%;
     /* max-width: var(--max-width); */
-    background-color: var(--color-dark);
+    background-color: var(--color-light);
     border-bottom: solid var(--stroke-weight) var(--color-dark);
 }
 

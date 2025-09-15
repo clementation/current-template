@@ -1,4 +1,5 @@
 import { createFileRoute, useLoaderData } from '@tanstack/react-router'
+import { useMediaQuery } from 'react-responsive';
 import data from '../new-data.json'
 
 import LazyImage from '../components/LazyImage'
@@ -14,7 +15,7 @@ function GalleryItem() {
 
 	return (
 		<div className="auto-wrapper flex-column double-gap">
-			<div className="auto-wrapper reverse-on-mobile double-gap">
+			<div className="auto-wrapper justify-center align-center reverse-on-mobile double-gap">
 				<div className="text-wrapper">
 					<h1>{item.title}</h1>
 					<p>{item.description}</p>
@@ -35,7 +36,7 @@ function Section({section}){
 		case 'image':
 			return (
 				//if there is no description the wrapper will display in column instead of row to give priority to the image
-				<div className={`auto-wrapper reverse-on-mobile double-gap ${section.description? "" : "flex-column-reverse"}`}>
+				<div className={`auto-wrapper justify-center align-center reverse-on-mobile double-gap ${section.description? "" : "flex-column-reverse"}`}>
 					{(section.heading || section.description) && (
 						<div className="text-wrapper">
 							{section.heading && <h2>{section.heading}</h2>}
@@ -48,16 +49,25 @@ function Section({section}){
 				</div>
 			)
 		case 'gallery':
+			// Use media query to determine if the device is mobile
+    		const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+			let width
+			if(section.mobileWidth && isMobile){
+				width = section.mobileWidth
+			}else{
+				width = section.width
+			}
+
 			return (
 				//if there is no description the wrapper will display in column instead of row to give priority to the image
-				<div className={`auto-wrapper reverse-on-mobile double-gap ${section.description? "" : "flex-column-reverse"}`}>
+				<div className={`auto-wrapper justify-center align-center reverse-on-mobile double-gap ${section.description? "" : "flex-column-reverse"}`}>
 					{(section.heading || section.description) && (
 						<div className="text-wrapper">
 							{section.heading && <h2>{section.heading}</h2>}
 							{section.description && <p>{section.description}</p>}
 						</div>
 					)}
-					<div className="section-gallery">
+					<div className={`section-gallery ${width}`} >
 						{section.images.map((image, index) => (
 							<div className="gallery-section-image" key={index}>
 								<LazyImage key={index} src={image.src} alt={image.alt} />

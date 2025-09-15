@@ -24,15 +24,47 @@ export default function Card({ item }: { item: any }) {
 
         <Link to={itemPath} >
             <motion.div 
-                className={`card${hovered ? " show-border" : ""}`}
+                className="card"
+                // className={`card${hovered ? " show-border" : ""}`}
                 onMouseEnter={ !isMobile ? () => setHovered(true) : undefined } 
                 onMouseLeave={ !isMobile ? () => setHovered(false) : undefined }
+                initial={{ scale: 1 }}
+                animate={{ scale: hovered ? 1.01 : 1 }}
+                transition={{
+                    ease: "easeInOut",
+                    duration: 0.3
+                }}
             >
-                {/* <img src={item.images[0].src} alt={item.images[0].alt} loading='lazy'/> */}
-                <LazyImage src={item.heroImage.src} alt={item.heroImage.src} />
-                <AnimatePresence>
+                <div className="image-stack">
+                    <motion.div
+                        // className="image-wrapper"
+                        // style={{ position: 'absolute', inset: 0 }}
+                        // initial={false}
+                        // animate={{ opacity: hovered ? 0 : 1 }}
+                        // transition={{
+                        //     ease: "easeInOut",
+                        //     duration: 0.3
+                        // }}
+                    >
+                        <LazyImage src={item.heroImage.src} alt={item.heroImage.src} />
+                    </motion.div>
+                    <motion.div
+                        className="image-wrapper"
+                        style={{ position: 'absolute', inset: 0 }}
+                        initial={false}
+                        animate={{ opacity: hovered ? 1 : 0 }}
+                        transition={{
+                            ease: "easeInOut",
+                            duration: 0.3
+                        }}
+                    >
+                        <LazyImage src={item.hoverImage.src} alt={item.hoverImage.src} />
+                    </motion.div>
+                    
+                </div>
+                {/* <AnimatePresence>
                     { hovered && <CardTitle title={item.title} /> }
-                </AnimatePresence>
+                </AnimatePresence> */}
             </motion.div>
         </Link>
 
@@ -46,16 +78,13 @@ function CardTitle({ title }: { title: string }) {
         <motion.div 
                 className='card-title'
                 initial={{
-                    height: 0,
-                    opacity: 0
+                    scale: 0
                 }}
                 animate={{
-                    height: "auto",
-                    opacity: 1
+                    scale: 1
                 }}
                 exit={{
-                    height: 0,
-                    opacity: 0
+                    scale: 0
                 }}
                 transition={{
                     ease: "easeInOut",

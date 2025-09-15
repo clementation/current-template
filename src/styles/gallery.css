@@ -23,10 +23,18 @@
 .section-gallery {
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   /* grid-template-columns: 1fr 1fr 1fr; */
    gap: var(--gap);
 }
 
-.gallery-section-image {
-   flex: 1 0 calc(25%);
+.column-1 {
+    grid-template-columns: 1fr;
+}
+
+.column-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
 }

@@ -1,33 +1,59 @@
+import { useRef } from 'react';
 import { createFileRoute } from '@tanstack/react-router'
+import emailjs from '@emailjs/browser';
+
+import '../styles/contact.css';
 
 export const Route = createFileRoute('/contact')({
 	component: Contact,
 })
 
 function Contact() {
+
+	const form = useRef();
+
+	function sendEmail(event) {
+    event.preventDefault();
+
+    emailjs
+      .sendForm('contact_form', 'template_ez74gjh', form.current, {
+        publicKey: 'UUUX95lcolcHglqyA',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  		};
+
 	return (
-		<>
-			<h1>Contact Page</h1>
-			<div className='lorm-block'>
-				<h2>Lorm Ipsum</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div className="auto-wrapper flex-column">
+			<div className="text-wrapper">
+				<h1>What's on your mind?</h1>
 			</div>
-			<div className='lorm-block'>
-				<h2>Lorm Ipsum</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div className='lorm-block'>
-				<h2>Lorm Ipsum</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div className='lorm-block'>
-				<h2>Lorm Ipsum</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div className='lorm-block'>
-				<h2>Lorm Ipsum</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</>
+			<form ref={form} className="contact-form" onSubmit={sendEmail}>
+				<div className='form-row'>
+					<label htmlFor="name">Name</label>
+					<input type="text" id="name" name="name" required />
+				</div>
+				<div className='form-row'>
+					<label htmlFor="email">Email</label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				<div className='form-row'>
+					<label htmlFor="subject">Subject</label>
+					<input type="text" id="subject" name="subject" required />
+				</div>
+				<div className='form-row'>
+					<label htmlFor="message">Message</label>
+					<textarea id="message" name="message" rows={4} required />
+				</div>
+				<button className='submit-button' type="submit">Send</button>
+			</form>
+
+		</div>
 	)
 }

@@ -21,6 +21,8 @@
             {
                 "type": "gallery",
                 "heading": "Section Heading",
+                "width": "column-width",
+                "mobileWidth": "column-width",
                 "description": "Section description",
                 "images": [
                     {
@@ -56,6 +58,7 @@
             },
             {
                 "type": "gallery",
+                "width": 2,
                 "heading": "Section Heading",
                 "description": "Section description",
                 "images": [
@@ -99,6 +102,8 @@
             },
             {
                 "type": "gallery",
+                "width": "column-3",
+                "mobileWidth": "column-1",
                 "heading": "",
                 "description": "",
                 "images": [
@@ -132,6 +137,7 @@
         "sections": [
             {
                 "type": "gallery",
+                "width": "column-3",
                 "heading": "Process",
                 "description": "These are handfull of the sketches I did while brainstorming ideas for the logo. I started with calling the company up on the phone to ask about their history and get a better idea of who they were. I spoke with the owner, Lanny Shuler, who told me about his youth in southern Californing where he was inspired by street art and local showings of surf films.",
                 "images": [
@@ -175,8 +181,10 @@
             },
             {
                 "type": "gallery",
-                "heading": "",
-                "description": "",
+                "width": "column-2",
+                "mobileWidth": "column-2",
+                "heading": "Direction",
+                "description": "Say something that explains why you made the decisions you did. Talk about colors, typefaces, layout, etc.",
                 "images": [
                     {
                         "src": "/image-data/shuler-rebrand/logo.png",
@@ -190,10 +198,64 @@
             },
             {
                 "type": "image",
-                "heading": "Final Concept",
+                "heading": "",
                 "description": "",
                 "src": "/image-data/shuler-rebrand/stylescape.webp",
                 "alt": "Alt text"
+            }
+        ]
+    },
+    {
+        "title": "SAA Gallery Icons",
+        "description": "The salem arts association approached my class at OSU to create a series of icons the represent the unique gellery spaces within the arts association building. Each icon was to be used on signage throughout the building and on the website to help visitors navigate.",
+        "heroImage": {
+            "src": "/image-data/saa-icons/brochure.webp",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/saa-icons/map.jpg",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "image",
+                "heading": "Mapping the Space",
+                "description": "Since the artwork inside each gallery regulary changes, my group and I decided to focus on the unique architectural features of each space. Convieniently, this meant all the icons could be pieced together to form a map of the building.",
+                "src": "/image-data/saa-icons/map.jpg",
+                "alt": "Alt text"
+            },
+            {
+                "type": "gallery",
+                "heading": "",
+                "description": "",
+                "width": "column-2",
+                "mobileWidth": "column-1",
+                "images": [
+                    {
+                        "src": "/image-data/saa-icons/camas-photo.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/camas-map.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/giftshop-photo.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/giftshop-map.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/hero.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/annex-photo.jpg",
+                        "alt": "Alt text"
+                    }
+                ]
             }
         ]
     }

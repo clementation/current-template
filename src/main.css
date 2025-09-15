@@ -9,17 +9,17 @@
   /* TO DO */
   /* optionally look up color scheems later */
 
-  font-family: sofia-pro-variable, sans-serif;
+  font-family: articulat-cf, sans-serif;
+  font-weight: 500;
 
   margin: 0;
 
   /* Color scheme */
   --color-light: #f0f0f0;
-  /* --color-light: white; */
   --color-dark: #333333;
   --color-text: var(--color-dark);
   --color-primary: #5dc8dc;
-  --color-secondary: #d8c883;
+  --color-secondary: #9e9d9e;
 
   /* page formatting */
   --max-width: 1440px;
@@ -27,8 +27,15 @@
 
   /* Spacing */
   --padding: 1rem;
+  --quarter-padding: calc(var(--padding) / 4);
+  --half-padding: calc(var(--padding) / 2);
+  --double-padding: calc(var(--padding) * 2);
+
   --gap: 1rem;
-  --border-radius: 0.5rem;
+  --half-gap: calc(var(--gap) / 2);
+  --double-gap: calc(var(--gap) * 2);
+
+  --border-radius: 0.25rem;
   --stroke-weight: 2px;
 
   /* Look up what these do */
@@ -81,12 +88,18 @@ img {
   display: flex;
   width: 100%;
   padding: var(--padding);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
   align-items: center;
-  /* justify-content: center; */
 }
 
 .half-gap {
-  gap: calc(var(--gap) / 2);
+  gap: var(--half-gap);
 }
 
 .gap {
@@ -94,7 +107,7 @@ img {
 }
 
 .double-gap {
-  gap: calc(var(--gap) * 2);
+  gap: var(--double-gap);
 }
 
 
@@ -124,6 +137,7 @@ img {
 /* Text Article */
 .text-wrapper {
   width: 100%;
+  height: fit-content;
 }
 
 .text-wrapper p {

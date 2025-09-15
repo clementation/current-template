@@ -7,7 +7,7 @@
     aspect-ratio: 16/9; 
 }
 
-.card::before {
+/* .card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -16,9 +16,9 @@
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
   border-radius: inherit; /* if you use border-radius on .card */
-  box-sizing: border-box; /* Ensures the pseudo-element's border sits on the edge */
-  z-index: 2; /* Make sure it's above the image but below overlays/text if needed */
-}
+  /* box-sizing: border-box;  Ensures the pseudo-element's border sits on the edge */
+  /* z-index: 2; /* Make sure it's above the image but below overlays/text if needed */
+/* } */
 
 .card.show-border::before {
   opacity: 1;
@@ -34,19 +34,18 @@
 .card-title {
     position: absolute;
     bottom: 0;
-    width: 100%;
     display: flex;
     align-items: center;
-    padding-left: var(--padding);
-    padding-right: var(--padding);
+    margin: var(--padding);
+    padding-left: var(--double-padding);
+    padding-right: var(--double-padding);
     overflow: hidden;
-    backdrop-filter: blur(8px);
-    /* background-color: var(--color-light); */
-    border-top: solid var(--stroke-weight) var(--color-dark);
+    border-radius: 100%;
+    color: var(--color-dark);
+    background-color: var(--color-light);
 }
 
 .card-title h3 {
-    color: var(--color-light);
     margin-block: 0.75rem;
     mix-blend-mode: screen;
 }

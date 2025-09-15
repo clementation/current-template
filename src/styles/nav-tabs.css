@@ -9,25 +9,26 @@
 }
 
 .nav-tab {
-    font-weight: 500;
+    font-weight: 700;
     display: flex;
     align-items: center;
     position: relative;
     text-decoration: none;
-    padding: 0.3rem 1rem 0.4rem 1rem;
-    color: var(--color-light);
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    color: var(--color-dark);
 }
 
 .tab-label {
     position: relative;
     z-index: 10;
+    /* background-color: var(--color-light); */
     /* include this blend mode if the navbar has a light background color */
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
 }
 
 .nav-tab:hover {
     transition: ease-in-out 0.1s;
-    color: color-mix(in srgb, var(--color-light) 70%, transparent);
+    /* color: color-mix(in srgb, var(--color-light) 70%, transparent); */
 }
 
 .active-nav-tab {
@@ -47,7 +48,7 @@
     /* border radius needs to be changed in NavTabs.tsx */
 
     /* Solid */
-    background-color: var(--color-light);
+    /* background-color: var(--color-dark); */
 
     /* Other Options */
 
@@ -55,6 +56,6 @@
     /* border: solid 2px var(--color-light); */
 
     /* Underline */
-    /* margin: 0 1rem 0 1rem;
-    border-bottom: solid 2px var(--color-dark); */
+    margin: 0 0.5rem 0 0.5rem;
+    border-bottom: solid 2px var(--color-dark);
 }

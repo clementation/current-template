@@ -61,7 +61,7 @@ export default function Navbar({}) {
             paddingBottom: "1rem"
         },
         small: {
-            height: "3rem",
+            height: "3.6rem",
             paddingTop: "0.75rem",
             paddingBottom: "0.75rem"
         }
