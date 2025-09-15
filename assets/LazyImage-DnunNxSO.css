@@ -1,0 +1,1 @@
+@keyframes color-pulse{0%{background-color:#e5e7eb}50%{background-color:#dee1e6}to{background-color:#e5e7eb}}.image-skeleton{position:absolute;top:0;right:0;bottom:0;left:0;animation:color-pulse 2s ease-in-out infinite}
