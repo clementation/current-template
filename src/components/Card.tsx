@@ -18,7 +18,7 @@ export default function Card({ item }: { item: any }) {
 
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
-    const itemPath = `/gallery/${item.title}`
+    const itemPath = `/work/${item.title}`
 
     return (
 

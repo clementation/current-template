@@ -12,9 +12,8 @@ import '../styles/nav-tabs.css'
 // Adding to this list will add a new tab to the navigation bar
 // Make sure the location matches a file in the routes directory
 let tabs = [
-    { name: "Home", location: "/" },
-    { name: "About", location: "/about" },
-    { name: "Gallery", location: "/gallery" },
+    { name: "About", location: "/" },
+    { name: "Work", location: "/work" },
     { name: "Contact", location: "/contact" }
 ]
 

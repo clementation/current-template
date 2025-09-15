@@ -16,7 +16,8 @@
 
   /* Color scheme */
   --color-light: #f0f0f0;
-  --color-dark: #333333;
+  /* --color-dark: #333333; */
+  --color-dark: black;
   --color-text: var(--color-dark);
   --color-primary: #5dc8dc;
   --color-secondary: #9e9d9e;

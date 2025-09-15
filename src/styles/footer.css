@@ -4,7 +4,8 @@
     margin-top: auto;
     /* max-width: var(--max-width); */
     width: 100%;
-    background-color: var(--color-dark);
+    background-color: var(--color-light);
+    border-top: solid var(--stroke-weight) var(--color-dark);
 }
 
 .footer-content {
@@ -17,7 +18,7 @@
     padding-left: var(--padding);
     padding-right: var(--padding);
     gap: var(--gap);
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 
 .footer-left {
