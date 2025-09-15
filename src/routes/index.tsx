@@ -25,12 +25,13 @@ function Index() {
 			<div className="auto-wrapper flex-column">
 				<div className="text-wrapper">
 					<h1>Lets go down the rabbit hole</h1>
-					<p>Hello there, I appreciate you stopping by. My name is Connor Kealey and I'd like to get to know you. What I do begins with a handshake and ends with someing you'll want to show off. Between A and B is a maze full of ideas about your business, and questions about how you'll show your clients. </p>
+					<p>Hi, I’m Connor Kealey. I've found that Every project starts with a rabbit hole — a tangle of ideas, questions, and possibilities. My job is to dive in, sort through the maze, and bring back something clear, crafted, and ready to show off. </p>
 				</div>
 				<div className="text-wrapper skills">
 					<ul>
 						<li> I build web apps</li>
 						<li> develop branding</li>
+						<li> create animations</li>
 						<li> & make related materials</li>
 					</ul>
 				</div>
@@ -42,7 +43,7 @@ function Index() {
 				</div>
 
 				<div className="text-wrapper">
-					<p>I'm avaliable for work so if you like what you see please <Link to={"/contact"}>get in touch</Link>.</p>
+					<p>I'm avaliable for work so if you like what you see, please <Link to={"/contact"}>get in touch</Link>.</p>
 				</div>
 
 			</div>
