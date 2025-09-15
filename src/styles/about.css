@@ -1,0 +1,15 @@
+.pfp{
+    max-width: 30rem;
+}
+
+.secondary {
+    color: var(--color-secondary);
+}
+
+.skills ul{
+    padding-inline-start: 1.2rem;
+}
+
+.btn-wrapper {
+    padding-left: 0;
+}

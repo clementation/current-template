@@ -29,10 +29,10 @@ export default function Card({ item }: { item: any }) {
                 onMouseEnter={ !isMobile ? () => setHovered(true) : undefined } 
                 onMouseLeave={ !isMobile ? () => setHovered(false) : undefined }
                 initial={{ scale: 1 }}
-                animate={{ scale: hovered ? 1.01 : 1 }}
+                animate={{ scale: hovered ? 1.007 : 1 }}
                 transition={{
                     ease: "easeInOut",
-                    duration: 0.3
+                    duration: 0.2
                 }}
             >
                 <div className="image-stack">

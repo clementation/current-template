@@ -10,6 +10,12 @@ input, textarea {
     font-size: 1rem;
 }
 
+/* .contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+
 .contact-form {
     font-weight: 600;
     max-width: 30rem;
@@ -25,17 +31,6 @@ input, textarea {
     gap: var(--half-gap);
 }
 
-.submit-button {
-    font-weight: 600;
-    font-size: 1rem;
-    width: fit-content;
-    padding-top: var(--half-padding);
-    padding-bottom: var(--half-padding);
-    padding-left: var(--padding);
-    padding-right: var(--padding);
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    border: none;
-    border-radius: 100%;
-    cursor: pointer;
+span.line {
+  display: inline-block;
 }

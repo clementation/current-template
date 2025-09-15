@@ -64,6 +64,17 @@ img {
   height: auto;
 }
 
+p{
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgb(90, 90, 90);
+}
+
+a{
+  font-weight: bolder;
+  color: var(--color-dark);
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -82,6 +93,7 @@ img {
 
 .outlet {
   width: 100%;
+  height: 100%;
 }
 
 /* Auto Wrapper */

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouterState, Link } from "@tanstack/react-router";
 import { motion } from 'motion/react'
 import { useMediaQuery } from 'react-responsive';
@@ -32,6 +32,13 @@ export default function NavTabs({ handleEscape }: { handleEscape?: () => void })
         const foundTab = tabs.find(tab => tab.location === currentPath)
         return foundTab ? foundTab.location : tabs[0].location
     })
+
+    // Update activeTab when the route changes
+    useEffect(() => {
+        const currentPath = routerState.location.pathname
+        const foundTab = tabs.find(tab => tab.location === currentPath)
+        setActiveTab(foundTab ? foundTab.location : tabs[0].location)
+    }, [routerState.location.pathname])
 
     return (
         <div className='nav-tabs'

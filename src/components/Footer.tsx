@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer">
             <div className='footer-content'>
                 <div className='footer-left'>
-                    <p>© 2024 Your Company. All rights reserved.</p>
+                    <p>© 2025 Kealey Design. All rights reserved.</p>
                 </div>
                 <div className="footer-right">
                     <div className="footer-logo">
@@ -13,7 +13,7 @@ export default function Footer() {
                             <img src="logo-small.svg" alt="Logo" />
                         </a>
                     </div>
-                    <p>Website created by Connor Kealey</p>
+                    <p>developed by <br /> kealey design</p>
                 </div>
             </div>
         </div>

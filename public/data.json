@@ -1,0 +1,263 @@
+[
+    {
+        "title": "Project Title",
+        "description": "Overall description of the project.",
+        "heroImage": {
+            "src": "/image-data/project-title/hero-image.png",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/project-title/hover-image.png",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "image",
+                "heading": "Section Heading",
+                "description": "Section description",
+                "src": "/image-data/project-title/image.png",
+                "alt": "Alt text"
+            },
+            {
+                "type": "gallery",
+                "heading": "Section Heading",
+                "width": "column-width",
+                "mobileWidth": "column-width",
+                "description": "Section description",
+                "images": [
+                    {
+                        "src": "/image-data/project-title/image1.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/project-title/image2.png",
+                        "alt": "Alt text"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Nick Burns Construction",
+        "description": "My friend Nick Burns approached me and said that he needed a business card for his new construction company. A good business card isn't complete without a logo, so I made him one of those too.",
+        "heroImage": {
+            "src": "/image-data/nick-burns-construction/nbc-business-card.jpg",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/nick-burns-construction/nbc-business-card.jpg",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "image",
+                "heading": "Got him covered",
+                "description": "Work with nick is ongoing, for now we've got him set up with the card, a hoodie, and work shirts. Plans include hats, truck decals and website. Concept sketches for the website below.",
+                "src": "/image-data/nick-burns-construction/nbc-hoodie.jpg",
+                "alt": "Alt text"
+            },
+            {
+                "type": "gallery",
+                "width": "column-2",
+                "mobileWidth": "column-1",
+                "heading": "",
+                "description": "",
+                "images": [
+                    {
+                        "src": "/image-data/nick-burns-construction/concept-1.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/nick-burns-construction/concept-2.jpg",
+                        "alt": "Alt text"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Gray Matter",
+        "description": "Gray Matter is a vintage for those more interested in questions than answers. Each wine misappropriates one of history’s great thinkers in the interest of becoming a conversation piece for the dinner table.",
+        "heroImage": {
+            "src": "/image-data/gray-matter/hero.webp",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/gray-matter/gallery-1.webp",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "image",
+                "heading": "",
+                "description": "",
+                "src": "/image-data/gray-matter/bottle-lable.webp",
+                "alt": "Alt text"
+            },
+            {
+                "type": "image",
+                "heading": "The Process & the Brief",
+                "description": "This was a class project for my graphic design degree. The brief was to create a series of wine lables that incorperate AI generated images. Prompting the drawing of each philpsopher into existance was convienent, but I prefer to think of their use as just speeding up the concepting process. For a production product I'd prefer to work with a human illustrator. \n \n The mockups youre seeing are 3D renders created in Blender. I had a lot of fun setting up the lightting and materials, especially the embossed foil on the neck of the bottles.",
+                "src": "/image-data/gray-matter/three-bottles.webp",
+                "alt": "Alt text"
+            },
+            {
+                "type": "gallery",
+                "width": "column-3",
+                "mobileWidth": "column-1",
+                "heading": "",
+                "description": "",
+                "images": [
+                    {
+                        "src": "/image-data/gray-matter/gallery-1.webp",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/gray-matter/gallery-2.webp",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/gray-matter/gallery-3.webp",
+                        "alt": "Alt text"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Shuler Rebrand",
+        "description": "This was a class project for my graphic design degree. The breif- rebrand a lesser known but real company that exists out in the world. I chose Shuler surfboards which is a small shaping studio that creates custom surfboards for surfers on the north oregon coast.",
+        "heroImage": {
+            "src": "/image-data/shuler-rebrand/hero.webp",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/shuler-rebrand/stylescape.webp",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "gallery",
+                "width": "column-3",
+                "heading": "Process",
+                "description": "These are handfull of the sketches I did while brainstorming ideas for the logo. I started with calling the company up on the phone to ask about their history and get a better idea of who they were. I spoke with the owner, Lanny Shuler, who told me about his youth in southern Californing where he was inspired by street art and local showings of surf films.",
+                "images": [
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-1.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-2.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-3.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-4.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-5.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-6.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-7.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-8.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/process-gallery/process-10.png",
+                        "alt": "Alt text"
+                    }
+                ]
+            },
+            {
+                "type": "gallery",
+                "width": "column-2",
+                "mobileWidth": "column-2",
+                "heading": "Direction",
+                "description": "Say something that explains why you made the decisions you did. Talk about colors, typefaces, layout, etc.",
+                "images": [
+                    {
+                        "src": "/image-data/shuler-rebrand/logo.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/shuler-rebrand/wordmark.png",
+                        "alt": "Alt text"
+                    }
+                ]
+            },
+            {
+                "type": "image",
+                "heading": "",
+                "description": "",
+                "src": "/image-data/shuler-rebrand/stylescape.webp",
+                "alt": "Alt text"
+            }
+        ]
+    },
+    {
+        "title": "SAA Gallery Icons",
+        "description": "The salem arts association approached my class at OSU to create a series of icons the represent the unique gellery spaces within the arts association building. Each icon was to be used on signage throughout the building and on the website to help visitors navigate.",
+        "heroImage": {
+            "src": "/image-data/saa-icons/brochure.webp",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/saa-icons/brochure.webp",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "image",
+                "heading": "Mapping the Space",
+                "description": "Since the artwork inside each gallery regulary changes, my group and I decided to focus on the unique architectural features of each space. Convieniently, this meant all the icons could be pieced together to form a map of the building.",
+                "src": "/image-data/saa-icons/map.jpg",
+                "alt": "Alt text"
+            },
+            {
+                "type": "gallery",
+                "heading": "",
+                "description": "",
+                "width": "column-2",
+                "mobileWidth": "column-1",
+                "images": [
+                    {
+                        "src": "/image-data/saa-icons/camas-photo.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/camas-map.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/giftshop-photo.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/giftshop-map.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/hero.jpg",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/saa-icons/annex-photo.jpg",
+                        "alt": "Alt text"
+                    }
+                ]
+            }
+        ]
+    }
+]

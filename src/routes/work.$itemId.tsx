@@ -1,6 +1,5 @@
 import { createFileRoute, useLoaderData } from '@tanstack/react-router'
 import { useMediaQuery } from 'react-responsive';
-import data from '../new-data.json'
 
 import LazyImage from '../components/LazyImage'
 
@@ -9,7 +8,14 @@ export const Route = createFileRoute('/work/$itemId')({
 	loader: ({ params: { itemId } }) => fetchItem(itemId)
 })
 
+async function fetchItem(itemId: string): Promise<GalleryItemData | undefined> {
+	const response = await fetch('/data.json')
+	const data: GalleryItemData[] = await response.json()
+	return data.find((i: GalleryItemData) => i.title === itemId)
+}
+
 function GalleryItem() {
+
 	const item = useLoaderData({ from: '/work/$itemId' })
     if (!item) return <div>Item not found</div>
 
@@ -69,7 +75,7 @@ function Section({section}:{section: SectionData}){
 					)}
                     <div className={`section-gallery ${width}`} >
 						{section.images && section.images.map((image:image, index:number) => (
-							<div className="gallery-section-image" key={index}>
+							<div className="image-wrapper" key={index}>
 								<LazyImage key={index} src={image.src} alt={image.alt} />
 							</div>
 						))}
@@ -105,8 +111,4 @@ interface GalleryItemData {
 	description: string;
 	heroImage: image;
 	sections: SectionData[];
-}
-
-function fetchItem(itemId: string): GalleryItemData | undefined {
-	return (data as GalleryItemData[]).find((i: GalleryItemData) => i.title === itemId);
 }
