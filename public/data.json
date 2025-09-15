@@ -1,43 +1,5 @@
 [
     {
-        "title": "Project Title",
-        "description": "Overall description of the project.",
-        "heroImage": {
-            "src": "/image-data/project-title/hero-image.png",
-            "alt": "Alt text"
-        },
-        "hoverImage": {
-            "src": "/image-data/project-title/hover-image.png",
-            "alt": "Alt text"
-        },
-        "sections": [
-            {
-                "type": "image",
-                "heading": "Section Heading",
-                "description": "Section description",
-                "src": "/image-data/project-title/image.png",
-                "alt": "Alt text"
-            },
-            {
-                "type": "gallery",
-                "heading": "Section Heading",
-                "width": "column-width",
-                "mobileWidth": "column-width",
-                "description": "Section description",
-                "images": [
-                    {
-                        "src": "/image-data/project-title/image1.png",
-                        "alt": "Alt text"
-                    },
-                    {
-                        "src": "/image-data/project-title/image2.png",
-                        "alt": "Alt text"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "title": "Nick Burns Construction",
         "description": "My friend Nick Burns approached me and said that he needed a business card for his new construction company. A good business card isn't complete without a logo, so I made him one of those too.",
         "heroImage": {
@@ -69,55 +31,6 @@
                     },
                     {
                         "src": "/image-data/nick-burns-construction/concept-2.jpg",
-                        "alt": "Alt text"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title": "Gray Matter",
-        "description": "Gray Matter is a vintage for those more interested in questions than answers. Each wine misappropriates one of history’s great thinkers in the interest of becoming a conversation piece for the dinner table.",
-        "heroImage": {
-            "src": "/image-data/gray-matter/hero.webp",
-            "alt": "Alt text"
-        },
-        "hoverImage": {
-            "src": "/image-data/gray-matter/gallery-1.webp",
-            "alt": "Alt text"
-        },
-        "sections": [
-            {
-                "type": "image",
-                "heading": "",
-                "description": "",
-                "src": "/image-data/gray-matter/bottle-lable.webp",
-                "alt": "Alt text"
-            },
-            {
-                "type": "image",
-                "heading": "The Process & the Brief",
-                "description": "This was a class project for my graphic design degree. The brief was to create a series of wine lables that incorperate AI generated images. Prompting the drawing of each philpsopher into existance was convienent, but I prefer to think of their use as just speeding up the concepting process. For a production product I'd prefer to work with a human illustrator. \n \n The mockups youre seeing are 3D renders created in Blender. I had a lot of fun setting up the lightting and materials, especially the embossed foil on the neck of the bottles.",
-                "src": "/image-data/gray-matter/three-bottles.webp",
-                "alt": "Alt text"
-            },
-            {
-                "type": "gallery",
-                "width": "column-3",
-                "mobileWidth": "column-1",
-                "heading": "",
-                "description": "",
-                "images": [
-                    {
-                        "src": "/image-data/gray-matter/gallery-1.webp",
-                        "alt": "Alt text"
-                    },
-                    {
-                        "src": "/image-data/gray-matter/gallery-2.webp",
-                        "alt": "Alt text"
-                    },
-                    {
-                        "src": "/image-data/gray-matter/gallery-3.webp",
                         "alt": "Alt text"
                     }
                 ]
@@ -202,6 +115,126 @@
                 "heading": "",
                 "description": "",
                 "src": "/image-data/shuler-rebrand/stylescape.webp",
+                "alt": "Alt text"
+            }
+        ]
+    },
+    {
+        "title": "Gray Matter",
+        "description": "Gray Matter is a vintage for those more interested in questions than answers. Each wine misappropriates one of history’s great thinkers in the interest of becoming a conversation piece for the dinner table.",
+        "heroImage": {
+            "src": "/image-data/gray-matter/hero.webp",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/gray-matter/gallery-1.webp",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "image",
+                "heading": "",
+                "description": "",
+                "src": "/image-data/gray-matter/bottle-lable.webp",
+                "alt": "Alt text"
+            },
+            {
+                "type": "image",
+                "heading": "The Process & the Brief",
+                "description": "This was a class project for my graphic design degree. The brief was to create a series of wine lables that incorperate AI generated images. Prompting the drawing of each philpsopher into existance was convienent, but I prefer to think of their use as just speeding up the concepting process. For a production product I'd prefer to work with a human illustrator. \n \n The mockups youre seeing are 3D renders created in Blender. I had a lot of fun setting up the lightting and materials, especially the embossed foil on the neck of the bottles.",
+                "src": "/image-data/gray-matter/three-bottles.webp",
+                "alt": "Alt text"
+            },
+            {
+                "type": "gallery",
+                "width": "column-3",
+                "mobileWidth": "column-1",
+                "heading": "",
+                "description": "",
+                "images": [
+                    {
+                        "src": "/image-data/gray-matter/gallery-1.webp",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/gray-matter/gallery-2.webp",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/gray-matter/gallery-3.webp",
+                        "alt": "Alt text"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Clement",
+        "description": "Clement is something of a personal totem that started as a sketchbook character and has since found his way into the digital world. The process of rigging and posing this guy taught me more than I ever expected to learn about Blender and 3D modeling.",
+        "heroImage": {
+            "src": "/image-data/clement/clement-hero.webp",
+            "alt": "Alt text"
+        },
+        "hoverImage": {
+            "src": "/image-data/clement/clement-rig.jpg",
+            "alt": "Alt text"
+        },
+        "sections": [
+            {
+                "type": "gallery",
+                "heading": "",
+                "width": "column-5",
+                "mobileWidth": "column-2",
+                "description": "",
+                "images": [
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 1.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 2.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 3.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 4.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 5.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 6.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 7.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 8.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 9.png",
+                        "alt": "Alt text"
+                    },
+                    {
+                        "src": "/image-data/clement/Comic/Brain Box 10.png",
+                        "alt": "Alt text"
+                    }
+                    
+                ]
+            },
+            {
+                "type": "image",
+                "heading": "",
+                "description": "",
+                "src": "/image-data/clement/clement-rig.jpg",
                 "alt": "Alt text"
             }
         ]
