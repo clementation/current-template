@@ -31,7 +31,7 @@ function GalleryItem() {
 	)
 }
 
-function Section({section}){
+function Section({section}:{section: SectionData}){
 	switch (section.type) {
 		case 'image':
 			return (
@@ -68,7 +68,7 @@ function Section({section}){
 						</div>
 					)}
                     <div className={`section-gallery ${width}`} >
-						{section.images.map((image, index) => (
+						{section.images && section.images.map((image:image, index:number) => (
 							<div className="gallery-section-image" key={index}>
 								<LazyImage key={index} src={image.src} alt={image.alt} />
 							</div>
@@ -86,11 +86,25 @@ interface image {
 	alt: string;
 }
 
+interface SectionData {
+	type: 'image' | 'gallery';
+	heading?: string;
+	description?: string;
+	// For type 'image'
+	src: string;
+	alt: string;
+	// For type 'gallery'
+	images?: image[];
+	width?: 'small' | 'medium' | 'large' | 'full';
+	mobileWidth?: 'small' | 'medium' | 'large' | 'full';
+}
+
 
 interface GalleryItemData {
 	title: string;
 	description: string;
 	heroImage: image;
+	sections: SectionData[];
 }
 
 function fetchItem(itemId: string): GalleryItemData | undefined {

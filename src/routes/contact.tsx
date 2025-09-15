@@ -10,24 +10,24 @@ export const Route = createFileRoute('/contact')({
 
 function Contact() {
 
-	const form = useRef();
+	const form = useRef<HTMLFormElement>(null);
 
-	function sendEmail(event) {
-    event.preventDefault();
+	function sendEmail(event: React.FormEvent<HTMLFormElement>) {
+	event.preventDefault();
 
-    emailjs
-      .sendForm('contact_form', 'template_ez74gjh', form.current, {
-        publicKey: 'UUUX95lcolcHglqyA',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  		};
+	emailjs
+	  .sendForm('contact_form', 'template_ez74gjh', form.current!, {
+		publicKey: 'UUUX95lcolcHglqyA',
+	  })
+	  .then(
+		() => {
+		  console.log('SUCCESS!');
+		},
+		(error) => {
+		  console.log('FAILED...', error.text);
+		},
+	  );
+		};
 
 	return (
 		<div className="auto-wrapper flex-column">

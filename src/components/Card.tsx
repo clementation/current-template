@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { Link } from '@tanstack/react-router'; // Adjust import based on your routing library
 import { useMediaQuery } from 'react-responsive';
 
@@ -72,28 +72,28 @@ export default function Card({ item }: { item: any }) {
 }
 
 
-function CardTitle({ title }: { title: string }) {
+// function CardTitle({ title }: { title: string }) {
 
-    return (
-        <motion.div 
-                className='card-title'
-                initial={{
-                    scale: 0
-                }}
-                animate={{
-                    scale: 1
-                }}
-                exit={{
-                    scale: 0
-                }}
-                transition={{
-                    ease: "easeInOut",
-                    duration: 0.3
-                }}
-            >
-                <motion.h3>
-                    {title}
-                </motion.h3>
-        </motion.div>
-    )
-}
+//     return (
+//         <motion.div 
+//                 className='card-title'
+//                 initial={{
+//                     scale: 0
+//                 }}
+//                 animate={{
+//                     scale: 1
+//                 }}
+//                 exit={{
+//                     scale: 0
+//                 }}
+//                 transition={{
+//                     ease: "easeInOut",
+//                     duration: 0.3
+//                 }}
+//             >
+//                 <motion.h3>
+//                     {title}
+//                 </motion.h3>
+//         </motion.div>
+//     )
+// }
