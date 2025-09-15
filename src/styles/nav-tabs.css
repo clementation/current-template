@@ -31,10 +31,10 @@
     /* color: color-mix(in srgb, var(--color-light) 70%, transparent); */
 }
 
-.active-nav-tab {
-    /* font-weight: bold; */
-    /* color: var(--color-dark); */
-}
+/* .active-nav-tab {
+    font-weight: bold;
+    color: var(--color-dark);
+} */
 
 /* Prevents hover from changing text color of active tab */
 /* make sure it's the same as the nav tab color */
