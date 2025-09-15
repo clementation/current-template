@@ -16,10 +16,10 @@ function Index() {
 					<h1>About Page</h1>
 				</div>
 				<div className="image-wrapper pfp">
-					<img src="/bunny.jpg" alt="a bunny with glasses drawn on" />
+					<img src="/logo-small.svg" alt="a bunny with glasses drawn on" />
 				</div>
 				<div className="text-wrapper secondary">
-					<h1>(not actually me)</h1>
+					<h1>(dig in)</h1>
 				</div>
 			</div>
 			<div className="auto-wrapper flex-column">
