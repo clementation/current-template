@@ -117,13 +117,13 @@ function Contact() {
 
 			<div className="auto-wrapper flex-column">
 				<div className="text-wrapper">
-					<h1>Reach out later</h1>
+					<h1>Direct Contact</h1>
 				</div>
 				<div className="text-wrapper">
-					<h2><span className='line'>creations@</span><span className='line'>connorkealey.design</span></h2>
+					<h2> <a href="mailto:creations@connorkealey.design"><span className='line contact-email'>creations@</span><span className='line contact-email'>connorkealey.design</span></a></h2>
 				</div>
 				<div className="text-wrapper">
-					<h2>971-238-6140</h2>
+					<h2> 971-238-6140 <span className='secondary'>(call or text)</span></h2>
 				</div>
 				<div className="text-wrapper">
 					<p>PO. Box 1246 <br /> Cannon Beach <br /> OR 97110 </p>

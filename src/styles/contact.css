@@ -31,6 +31,10 @@ input, textarea {
     gap: var(--half-gap);
 }
 
+.contact-email{
+    text-decoration: underline;
+}
+
 span.line {
   display: inline-block;
 }
