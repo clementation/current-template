@@ -3,6 +3,7 @@ import { Link } from '@tanstack/react-router'
 
 import '../styles/about.css';
 import Button from '../components/Button';
+import RabbitGame from '../components/RabbitGame';
 
 export const Route = createFileRoute('/')({
 	component: Index,
@@ -10,19 +11,11 @@ export const Route = createFileRoute('/')({
 
 function Index() {
 	return (
-		<div className="auto-wrapper double-gap">
-			<div className="auto-wrapper flex-column">
-				<div className="text-wrapper">
-					<h1>About Page</h1>
-				</div>
-				<div className="image-wrapper pfp">
-					<img src="/logo-small.svg" alt="a bunny with glasses drawn on" />
-				</div>
-				<div className="text-wrapper secondary">
-					<h1>(dig in)</h1>
-				</div>
+		<div className="auto-wrapper double-gap padding">
+			<div className="auto-wrapper flex-column padding align-center">
+				<RabbitGame />
 			</div>
-			<div className="auto-wrapper flex-column">
+			<div className="auto-wrapper flex-column padding">
 				<div className="text-wrapper">
 					<h1>Lets go down the rabbit hole</h1>
 					<p>Hi, I’m Connor Kealey. I've found that Every project starts with a rabbit hole — a tangle of ideas, questions, and possibilities. My job is to dive in, sort through the maze, and bring back something clear, crafted, and ready to show off. </p>

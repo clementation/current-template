@@ -1,16 +1,3 @@
-.pfp{
-    max-width: 30rem;
-}
-
-.pfp img{
-    width: 80%;
-    height: auto;
-}
-
-.secondary {
-    color: var(--color-secondary);
-}
-
 .skills ul{
     padding-inline-start: 1.2rem;
 }

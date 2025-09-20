@@ -1,0 +1,30 @@
+.rabbit-game{
+    display: grid;
+    /* width:fit-content; */
+    max-width: 25rem;
+    gap: var(--gap)
+}
+
+.game-text{
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .game-text h1{
+    font-size: 1.5rem;
+  }
+}
+
+.rigged-logo{
+    max-width: 4rem;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.rigged-logo svg{
+    width: 100%;
+    height: auto;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}

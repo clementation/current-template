@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SuperSecretRabbitPageRouteImport } from './routes/super-secret-rabbit-page'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work.index'
 import { Route as WorkItemIdRouteImport } from './routes/work.$itemId'
 
+const SuperSecretRabbitPageRoute = SuperSecretRabbitPageRouteImport.update({
+  id: '/super-secret-rabbit-page',
+  path: '/super-secret-rabbit-page',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -38,12 +44,14 @@ const WorkItemIdRoute = WorkItemIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/super-secret-rabbit-page': typeof SuperSecretRabbitPageRoute
   '/work/$itemId': typeof WorkItemIdRoute
   '/work': typeof WorkIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/super-secret-rabbit-page': typeof SuperSecretRabbitPageRoute
   '/work/$itemId': typeof WorkItemIdRoute
   '/work': typeof WorkIndexRoute
 }
@@ -51,26 +59,46 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/super-secret-rabbit-page': typeof SuperSecretRabbitPageRoute
   '/work/$itemId': typeof WorkItemIdRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/work/$itemId' | '/work'
+  fullPaths:
+    | '/'
+    | '/contact'
+    | '/super-secret-rabbit-page'
+    | '/work/$itemId'
+    | '/work'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/work/$itemId' | '/work'
-  id: '__root__' | '/' | '/contact' | '/work/$itemId' | '/work/'
+  to: '/' | '/contact' | '/super-secret-rabbit-page' | '/work/$itemId' | '/work'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/super-secret-rabbit-page'
+    | '/work/$itemId'
+    | '/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
+  SuperSecretRabbitPageRoute: typeof SuperSecretRabbitPageRoute
   WorkItemIdRoute: typeof WorkItemIdRoute
   WorkIndexRoute: typeof WorkIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/super-secret-rabbit-page': {
+      id: '/super-secret-rabbit-page'
+      path: '/super-secret-rabbit-page'
+      fullPath: '/super-secret-rabbit-page'
+      preLoaderRoute: typeof SuperSecretRabbitPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -105,6 +133,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
+  SuperSecretRabbitPageRoute: SuperSecretRabbitPageRoute,
   WorkItemIdRoute: WorkItemIdRoute,
   WorkIndexRoute: WorkIndexRoute,
 }

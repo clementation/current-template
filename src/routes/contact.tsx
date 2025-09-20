@@ -42,9 +42,8 @@ function Contact() {
 		};
 
 	return (
-		<div className="auto-wrapper justify-center">
-
-			<div className="auto-wrapper flex-column">
+		<div className="auto-wrapper justify-center gap padding">
+			<div className="auto-wrapper flex-column padding">
 				<div className="text-wrapper">
 					<h1>What's on your mind?</h1>
 				</div>
@@ -115,7 +114,7 @@ function Contact() {
 				}
 			</div>
 
-			<div className="auto-wrapper flex-column">
+			<div className="auto-wrapper flex-column padding">
 				<div className="text-wrapper">
 					<h1>Direct Contact</h1>
 				</div>

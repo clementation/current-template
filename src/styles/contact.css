@@ -16,6 +16,19 @@ input, textarea {
     width: 100%;
 } */
 
+/* .contact-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: 60rem;
+    gap: 8rem;
+} */
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+
 .contact-form {
     font-weight: 600;
     max-width: 30rem;
