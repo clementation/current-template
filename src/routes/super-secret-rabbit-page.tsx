@@ -21,8 +21,8 @@ function RouteComponent() {
         </div>
       </div>
       <div className="auto-wrapper">
-        <div className="text-wrapper">
-          <h1>Rabbit photo gallery incoming</h1>
+        <div className="text-wrapper secondary">
+          <h2> bunnies of cannon beach</h2>
         </div>
       </div>
     </div>
