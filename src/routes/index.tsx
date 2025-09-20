@@ -30,7 +30,7 @@ function Index() {
 				</div>
 
 				<div className="auto-wrapper btn-wrapper">
-					<Link to={"/contact"}>
+					<Link to={"/work"}>
 						<Button> See work </Button>
 					</Link>
 				</div>

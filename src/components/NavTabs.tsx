@@ -29,14 +29,16 @@ export default function NavTabs({ handleEscape }: { handleEscape?: () => void })
     // If the current path does not match any tab, default to the first tab
     let [activeTab, setActiveTab] = useState(() => {
         const currentPath = routerState.location.pathname
-        const foundTab = tabs.find(tab => tab.location === currentPath)
+        const basePath = "/" + currentPath.split("/")[1] // normalize
+        const foundTab = tabs.find(tab => tab.location === basePath)
         return foundTab ? foundTab.location : tabs[0].location
     })
 
     // Update activeTab when the route changes
     useEffect(() => {
         const currentPath = routerState.location.pathname
-        const foundTab = tabs.find(tab => tab.location === currentPath)
+        const basePath = "/" + currentPath.split("/")[1] // normalize
+        const foundTab = tabs.find(tab => tab.location === basePath)
         setActiveTab(foundTab ? foundTab.location : tabs[0].location)
     }, [routerState.location.pathname])
 
